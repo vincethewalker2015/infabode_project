@@ -1,5 +1,26 @@
 <div align="center">
     <div class="well">
-  <h2>Contacts</h2>
-</div>
+        <h2>
+        <%= link_to "Gmail", "/contacts/gmail", class: "btn btn-lg btn-primary con-list", :style => "line-height:0.8; width: 12% !important; outline: none; font-size: 17px;" %>
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th colspan="2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if !@contacts.nil?%>
+            <% @contacts.each do |c| %>
+            <tr>
+                <td class="name"><%= c[:name] %> :</td>
+                <td class="email"><%= c[:email] %></td>
+            </tr>
+            <% end %>
+           <% end %>
+        </tbody>
+    </table>
+    </div>
 </div>
