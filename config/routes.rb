@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'pages#index'
+  root to: 'pages#home'
+  get '/index' => 'pages#index'
   get '/auth/:provider/callback', to: 'sessions#create'
   get 'auth/facebook/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
