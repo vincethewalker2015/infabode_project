@@ -2,8 +2,14 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
-.twitter-blue {
+.t-blue {
     background-color: #1CA1F2 !important;
     color: white;
     font-weight: bold;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
 }
