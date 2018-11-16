@@ -1,24 +1,24 @@
-# README
+# OAuth APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Project is designed to demonstrate the method to log in to a GMail contacts account using Ruby on Rails 
+via Google OAuth 
 
-Things you may want to cover:
+Steps Taken:
 
-* Ruby version
+* Created a new/separate GMail account 
 
-* System dependencies
+* Generated a Fictious Name list
 
-* Configuration
+* Created Rails App (Infabode) with Routes, Controller, Config and Views files
 
-* Database creation
+* No Database was created as this app connects with the Gmail contacts app
 
-* Database initialization
+* Created GitHub Repo
 
-* How to run the test suite
+* Set up Heroku https://vincethewalker-infabode.herokuapp.com/ as production server
 
-* Services (job queues, cache servers, search engines, etc.)
+* Set up Google App OAuth platform and adding dev and production domains to Google Authorised Domain List
 
-* Deployment instructions
+* Before opening app, It is best to clear cookie content in Browser
 
 * ...
