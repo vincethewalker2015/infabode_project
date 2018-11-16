@@ -35,12 +35,14 @@ gem 'jbuilder', '~> 2.5'
 
 # OAth authentication gems
 gem 'omnicontacts', :git => 'https://github.com/Diego81/omnicontacts.git'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
+# gem 'omniauth-twitter'
+# gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2', '~> 0.4.1'
 
 # Use Figaro to manage secret keys
 # gem 'figaro'
+gem 'will_paginate', '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
