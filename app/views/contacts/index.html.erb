@@ -1,20 +1,17 @@
 <div align="center">
     <div class="well">
-    <h1>Contacts</h1>
+        <h1>Contacts</h1>
     </div>
     <h2>
      <% if @contacts.nil?%>
         <%= link_to  "Sign-in Gmail  ", "/contacts/gmail", class: "btn btn-lg btn-danger white" %>
      <% end %>
     </h2>
+   
     <table>
-        <thead>
-            <tr>
-                
-               
-            </tr>
-        </thead>
-        <tbody>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-4">
+                <tbody>
             <% if !@contacts.nil?%>
                 <th>Name</th>
                 <th class="space">|||||||||||</th>
@@ -23,12 +20,16 @@
             
             <% if !@contacts.nil?%>
             <% @contacts.each do |c| %>
-            <tr class="well profile-black-white-thin row" <%= cycle('profile-black-white-thin-b', '') %>>
+        
+                 <tr class="well profile-black-white-thin row" <%= cycle('profile-black-white-thin-b', '') %>>
                     <td class="name"><%= c[:name] %></td>
                     <td class="email"><%= c[:email] %></td>
-            </tr>
+                </tr>
+            
             <% end %>
            <% end %>
         </tbody>
+            </div>
+        </div>
     </table>
-</div>
+ </div>
