@@ -8,4 +8,8 @@ class ContactsController < ApplicationController
             end
     end
     
+    def policy
+        
+    end
+    
 end
