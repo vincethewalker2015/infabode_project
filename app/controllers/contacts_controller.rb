@@ -12,4 +12,7 @@ class ContactsController < ApplicationController
         
     end
     
+    def terms
+    end
+    
 end
