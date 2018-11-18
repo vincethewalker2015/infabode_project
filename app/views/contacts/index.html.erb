@@ -7,7 +7,7 @@
         <%= link_to  "Sign-in Google+  ", "/contacts/gmail", class: "btn btn-lg btn-danger white" %>
      <% end %>
     </h2>
-   
+      
     <table>
         <div class="row">
             <div class="col-md-8 col-md-offset-4">
@@ -19,9 +19,9 @@
             <% end %>
             
             <% if !@contacts.nil?%>
-            <% @contacts.each do |c| %>
+            <% @contacts.each do  |c| %>
         
-                 <tr class="well profile-black-white-thin row" <%= cycle('profile-black-white-thin-b', '') %>>
+                 <tr class="well profile-black-white-thin row info" <%= cycle('profile-black-white-thin-b', '') %>>
                     <td class="name"><%= c[:name] %></td>
                     <td class="email"><%= c[:email] %></td>
                 </tr>
