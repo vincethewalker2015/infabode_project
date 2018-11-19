@@ -47,3 +47,38 @@
 .btn {
     border-radius: 5px;
 }
+
+
+//       @media  
+// Iphone X
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) 
+{ .hide {
+    visibility: hidden;
+}}
+
+// iPhone 6, 7, & 8
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+{ .hide {
+    visibility: hidden;
+}}
+
+// iPhone 6, 7, & 8 Plus
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+{ .hide {
+    visibility: hidden;
+} }
+
+// iPhone 5 & 5S 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+{ .hide {
+    visibility: hidden;
+}}
